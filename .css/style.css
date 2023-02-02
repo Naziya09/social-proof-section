@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:"League Spartan" ;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+body > img{
+    position: fixed;
+    z-index: -1;
+}
+body > img:nth-of-type(1){
+    top: 0;
+    left: 0;
+}
+body > img:nth-of-type(2){
+    bottom: 0;
+    right: 0;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 23rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.card > p{
+    color: white;
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+}
+
+.card > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card > div > img{
+   border-radius: 50%;
+   width: 3rem;
+}
+
+.card > div >  div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.card h5{
+    color: aliceblue;
+    font-size: 1.05rem;
+}
+
+.card span{
+    color: hsl(333, 80%, 67%);
+    font-size: 1rem;
+}
+ 
+.card-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    
+}
+
+.card-row > div:nth-of-type(2){
+    position: relative;
+    top: 1.5rem;
+}
+
+.card-row > div:nth-of-type(3){
+    position: relative;
+    top: 3rem;
+}
+
+.feature-card{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 2.2rem;
+    width: 32rem;
+    background-color:hsl(300, 24%, 96%) ;
+    border-radius: 0.5rem;
+}
+
+.feature-card > span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%); ;
+}
+
+.feature-card > div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.feature-card > div > img{
+    width: 1.3rem;
+}
+
+.feature-card-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-card-parent > div:nth-of-type(2){
+ position: relative;
+ left: 1.5rem;
+}
+
+.feature-card-parent > div:nth-of-type(3){
+    position: relative;
+    left: 3rem;
+   }
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.title-card > h1{
+    font-size:  3.3rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    letter-spacing: 0.01px;
+}
+
+.title-card > p{
+    font-size:  1.2rem;
+    line-height: 1.5rem;
+    color: hsl(303, 10%, 53%) ;
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+}
+
+.title-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1150px){
+.card-row {
+    justify-content: center;
+    }
+
+    .card-row > div:nth-of-type(2),
+    .card-row > div:nth-of-type(3){
+        position: static;
+    }
+.title-row{
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.title-card{
+    justify-content: center;
+}
+.title-card > h1,
+.title-card > p{
+    flex-direction: column;
+}
+
+}
+
+    
